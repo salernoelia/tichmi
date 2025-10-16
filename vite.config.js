@@ -1,14 +1,16 @@
 import { VitePWA } from "vite-plugin-pwa";
 import { defineConfig } from "vite";
+import tailwindcss from "@tailwindcss/vite";
 import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-optimizeDeps: {
-    exclude: ['@electric-sql/pglite'],
+  optimizeDeps: {
+    exclude: ["@electric-sql/pglite"],
   },
   plugins: [
     vue(),
+    tailwindcss(),
     VitePWA({
       registerType: "autoUpdate",
       injectRegister: false,

@@ -16,6 +16,12 @@ onMounted(async () => {
 
 <template>
     <PWABadge />
+
+    <div class="flex flex-row">
+        <h1>2afs</h1>
+        <h1>2afs</h1>
+        <h1>2afs</h1>
+    </div>
     {{ data }}
 
 </template>

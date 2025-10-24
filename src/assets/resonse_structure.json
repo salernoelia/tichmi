@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "properties": {
+    "cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "cardId": { "type": "integer" },
+          "question": { "type": "string" },
+          "answers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": { "type": "string" },
+                "text": { "type": "string" },
+                "isCorrect": { "type": "boolean" },
+                "hint": { "type": "string" },
+                "explanation": { "type": "string" }
+              },
+              "required": ["id", "text", "isCorrect"]
+            }
+          }
+        },
+        "required": ["cardId", "question", "answers"]
+      }
+    }
+  },
+  "required": ["cards"]
+}

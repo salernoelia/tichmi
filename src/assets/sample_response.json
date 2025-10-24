@@ -1,0 +1,174 @@
+{
+  "cards": [
+    {
+      "cardId": 1,
+      "question": "What does the derivative of a function f(x) at a specific point represent geometrically?",
+      "answers": [
+        {
+          "id": "A",
+          "text": "The area under the curve from zero to that point.",
+          "isCorrect": false,
+          "explanation": "This describes the definite integral, not the derivative. The derivative deals with rates of change and slopes.",
+          "hint": "Consider what happens when you zoom in very closely on the graph at that point."
+        },
+        {
+          "id": "B",
+          "text": "The slope of the tangent line to the graph of f(x) at that point.",
+          "isCorrect": true,
+          "explanation": "The derivative is fundamentally defined as the instantaneous rate of change, which is represented geometrically by the slope of the line tangent to the curve at that exact point.",
+          "hint": "The derivative measures the instantaneous steepness of the function."
+        },
+        {
+          "id": "C",
+          "text": "The y-intercept of the function's graph.",
+          "isCorrect": false,
+          "explanation": "The y-intercept is found by setting x=0 in the original function f(x), not by calculating the derivative.",
+          "hint": "The concept relates to the instantaneous rate of change, not a specific fixed point like an axis crossing."
+        },
+        {
+          "id": "D",
+          "text": "The limit of the function as x approaches infinity.",
+          "isCorrect": false,
+          "explanation": "This describes the behavior of the function's horizontal asymptote, which is generally unrelated to the derivative at a specific finite point.",
+          "hint": "The derivative involves a limit, but specifically the limit of difference quotients."
+        }
+      ]
+    },
+    {
+      "cardId": 2,
+      "question": "Calculate the derivative of the function f(x) = 5x^4 using the Power Rule.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "20x^3",
+          "isCorrect": true,
+          "explanation": "According to the Power Rule, d/dx(ax^n) = a*n*x^(n-1). Here, 5 * 4 * x^(4-1) = 20x^3.",
+          "hint": "Multiply the coefficient by the exponent, and then decrease the exponent by 1."
+        },
+        {
+          "id": "B",
+          "text": "5x^5",
+          "isCorrect": false,
+          "explanation": "This result involves increasing the power by one, which is characteristic of basic integration, not differentiation.",
+          "hint": "The derivative operation always reduces the power of the variable by one."
+        },
+        {
+          "id": "C",
+          "text": "4x^3",
+          "isCorrect": false,
+          "explanation": "This ignores the coefficient 5. You must multiply the original coefficient by the exponent.",
+          "hint": "Don't forget to multiply the existing coefficient (5) by the original exponent (4)."
+        },
+        {
+          "id": "D",
+          "text": "20x^4",
+          "isCorrect": false,
+          "explanation": "While the coefficient (20) is correct, the exponent was not reduced. Remember to subtract 1 from the original power.",
+          "hint": "The Power Rule requires both multiplication and subtraction from the exponent."
+        }
+      ]
+    },
+    {
+      "cardId": 3,
+      "question": "Which of the following correctly states the Product Rule for differentiation, if h(x) = f(x)g(x)?",
+      "answers": [
+        {
+          "id": "A",
+          "text": "h'(x) = f'(x)g'(x)",
+          "isCorrect": false,
+          "explanation": "This is a common error. The derivative of a product is not simply the product of the derivatives.",
+          "hint": "The rule involves four terms added together, where each original function is multiplied by the derivative of the other."
+        },
+        {
+          "id": "B",
+          "text": "h'(x) = f'(x)g(x) + f(x)g'(x)",
+          "isCorrect": true,
+          "explanation": "This is the correct Product Rule: the derivative of the first times the second, plus the first times the derivative of the second.",
+          "hint": "Think of it as 'first derivative times second function, plus first function times second derivative'."
+        },
+        {
+          "id": "C",
+          "text": "h'(x) = (f'(x)g(x) - f(x)g'(x)) / [g(x)]^2",
+          "isCorrect": false,
+          "explanation": "This formula is the Quotient Rule, used for differentiating division of functions, not multiplication.",
+          "hint": "The Quotient Rule involves subtraction and a denominator, which are not present in the Product Rule."
+        },
+        {
+          "id": "D",
+          "text": "h'(x) = f(x)g(x) + f'(x)g'(x)",
+          "isCorrect": false,
+          "explanation": "This incorrectly includes the original product, f(x)g(x), in the derivative formula.",
+          "hint": "The derivative formula should not include the original undifferentiated functions multiplied together."
+        }
+      ]
+    },
+    {
+      "cardId": 4,
+      "question": "Find the derivative of y = (3x + 1)^2 using the Chain Rule.",
+      "answers": [
+        {
+          "id": "A",
+          "text": "18x + 6",
+          "isCorrect": true,
+          "explanation": "Using the Chain Rule: The derivative of the outer function (u^2) is 2u. The derivative of the inner function (3x+1) is 3. Result: 2(3x + 1) * 3 = 6(3x + 1) = 18x + 6.",
+          "hint": "Differentiate the 'outside' function first, leave the inside alone, and then multiply by the derivative of the 'inside' function."
+        },
+        {
+          "id": "B",
+          "text": "2(3x + 1)",
+          "isCorrect": false,
+          "explanation": "This correctly handles the outer derivative but forgets to multiply by the derivative of the inner function (which is 3).",
+          "hint": "Remember the 'inner' derivative (d/dx(3x+1)) must be included as a multiplying factor."
+        },
+        {
+          "id": "C",
+          "text": "6x + 2",
+          "isCorrect": false,
+          "explanation": "This is the derivative of 3x^2 + 2x, which is not the original function. You must apply the chain rule correctly to the term (3x+1).",
+          "hint": "The final answer should result from multiplying 2(3x+1) by the derivative of the inner term (3)."
+        },
+        {
+          "id": "D",
+          "text": "9x^2 + 6x + 1",
+          "isCorrect": false,
+          "explanation": "This is the original function expanded (y = 9x^2 + 6x + 1). The derivative of this expanded form would be 18x + 6.",
+          "hint": "The question asks for the derivative, not the expansion of the original function."
+        }
+      ]
+    },
+    {
+      "cardId": 5,
+      "question": "If a function s(t) describes the position of an object over time, what physical quantity does the first derivative, s'(t), represent?",
+      "answers": [
+        {
+          "id": "A",
+          "text": "Instantaneous acceleration.",
+          "isCorrect": false,
+          "explanation": "Acceleration is the rate of change of velocity, meaning it is the second derivative of position, s''(t).",
+          "hint": "This quantity is the rate of change of position with respect to time."
+        },
+        {
+          "id": "B",
+          "text": "Total distance traveled.",
+          "isCorrect": false,
+          "explanation": "Total distance traveled is calculated using integration over a time interval, not differentiation.",
+          "hint": "Think about the relationship between position and how quickly that position is changing."
+        },
+        {
+          "id": "C",
+          "text": "Instantaneous velocity.",
+          "isCorrect": true,
+          "explanation": "Velocity is defined as the rate of change of position (the first derivative of position with respect to time). Instantaneous velocity is the derivative at a specific moment.",
+          "hint": "The derivative gives the instantaneous rate of change."
+        },
+        {
+          "id": "D",
+          "text": "Average speed.",
+          "isCorrect": false,
+          "explanation": "Average speed is calculated over an interval using the formula (Total Distance) / (Total Time), not by taking an instantaneous derivative.",
+          "hint": "The term 'instantaneous' should guide your choice, not 'average'."
+        }
+      ]
+    }
+  ]
+}
